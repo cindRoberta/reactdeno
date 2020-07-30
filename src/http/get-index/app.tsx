@@ -1,20 +1,7 @@
-import React, { Component } from "https://unpkg.com/es-react";
+import React from "https://unpkg.com/es-react";
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      p: any;
-    }
-  }
-}
-
-type Props = {};
-
-type State = {
-  time: Date;
-};
-
-export class App extends Component<Props, State> {
+export class App extends React.Component {
+  
   state = {
     time: new Date(),
   };
